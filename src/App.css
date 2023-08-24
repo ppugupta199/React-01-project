@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bakbak+One&family=Baloo+Da+2:wght@400;700&family=Baloo+Thambi+2&family=Cedarville+Cursive&family=Edu+VIC+WA+NT+Beginner&family=Indie+Flower&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,100;0,200;1,100;1,200&family=Sacramento&family=Satisfy&family=Staatliches&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --red: #d01c28;
+  --gray: #2e2e2e;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  margin: 0;
 }
+body {
+  font-family: 'Archivo Black', sans-serif;
+}
+button {
+  all: unset;
+  padding: 6px 16px;
+  background: var(--red);
+  height: 32px;
+  color: white;
+  font-weight: 500;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 72px;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+.hero-content {
   display: flex;
   flex-direction: column;
+  gap: 12px;
+}
+.hero {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: calc(100vh-72px);
 }
-
-.App-link {
-  color: #61dafb;
+.hero h1 {
+  font-weight: 800;
+  font-size: 95px;
+  line-height: 102px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero p {
+  font-weight: 600;
+  color: var(--gray);
+  /* max-width: 400px; */
+}
+.hero-btn button {
+  font-size: 18px;
+}
+.hero-btn {
+  display: flex;
+  gap: 40px;
+  margin-top: 12px;
+}
+.secondary-btn {
+  background: transparent;
+  color: black;
+  border: 2px solid black;
+}
+.shopping {
+  font: size 14px;
+  margin-top: 12px;
+}
+.brand-icons {
+  display: flex;
+  margin-top: 12px;
+  gap: 26px;
 }
